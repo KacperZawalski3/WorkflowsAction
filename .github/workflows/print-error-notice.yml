@@ -10,7 +10,8 @@ jobs:
       - name: Print Error v3
         shell: bash
         run: |
+          fileYml=print-error-notice.yml
           echo "::error \
           title=Sample title \
-          ,file=print-error-notice.yml \
+          ,file=$fileYml \
           ::MSG."
