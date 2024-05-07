@@ -14,4 +14,4 @@ jobs:
           echo "::error \
           title=Sample title \
           ,file=$fileYml \
-          ::MSG."
+          ::MS/G."
