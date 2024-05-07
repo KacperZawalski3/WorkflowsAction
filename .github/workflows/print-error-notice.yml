@@ -1,6 +1,8 @@
 name: Print Github Error and Notice features
 on:
   pull_request:
+    branches:
+      - main
 jobs: 
   print:
     runs-on: ubuntu-latest
