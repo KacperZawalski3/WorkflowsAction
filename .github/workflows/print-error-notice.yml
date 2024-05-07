@@ -12,7 +12,7 @@ jobs:
       - name: Print Error v1
         shell: bash
         run: | 
-          print "::error title=Sample title,file=.github/workflows/print-error-notice.yml::MSG."
+          print "::error file=.github/workflows/print-error-notice.yml,line=1::Missing semicolon"
       - name: Print Error v2
         shell: bash
         run: |
