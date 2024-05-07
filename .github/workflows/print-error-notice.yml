@@ -7,8 +7,12 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Error based on docu
+      - name: Echo Error based on docu
         run: echo "::error file=.github/workflows/print-error-notice.yml,line=1::Missing semicolon"
+      - name: Echo Error with new lines
+        run: echo "::error \
+        file=.github/workflows/print-error-notice.yml, \
+        line=1::Missing semicolon"
       - name: Print Error v1
         shell: bash
         run: | 
