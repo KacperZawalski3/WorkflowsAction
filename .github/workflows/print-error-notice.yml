@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Error
-      run: |
-        var="Pozdro Synek"
-        print \
-          "::error" \
-          " title=Incorrect Metadata Component Assignment" \
-          ",file=" $var \
-          "::Standard Value Set, Duplicate rule or Matching rule incorrectly located in a package dir."
+        run: |
+          var="Pozdro Synek"
+          print \
+            "::error" \
+            " title=Incorrect Metadata Component Assignment" \
+            ",file=" $var \
+            "::Standard Value Set, Duplicate rule or Matching rule incorrectly located in a package dir."
