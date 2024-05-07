@@ -17,7 +17,7 @@ jobs:
       - name: Print Error v2
         shell: bash
         run: |
-          echo "::error" \
+          echo "::error \
           title=Sample title \
           file=.github/workflows/print-error-notice.yml \
           ::MSG."
