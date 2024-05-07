@@ -9,9 +9,8 @@ jobs:
     steps:
       - name: Print Error
         run: |
-          var="Pozdro Synek"
           print \
             "::error" \
             " title=Incorrect Metadata Component Assignment" \
-            ",file=" $var \
+            ",file=" $0 \
             "::Standard Value Set, Duplicate rule or Matching rule incorrectly located in a package dir."
