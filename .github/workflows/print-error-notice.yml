@@ -10,9 +10,10 @@ jobs:
       - name: Print Error based on docu
         run: echo "::error file=.github/workflows/print-error-notice.yml,line=1::Missing semicolon"
       - name: Print Error
+        shell: bash
         run: |
           print \
             "::error" \
-            " title=Incorrect Metadata Component Assignment" \
+            " title=Sample title" \
             ",file=.github/workflows/print-error-notice.yml" \
-            "::Standard Value Set, Duplicate rule or Matching rule incorrectly located in a package dir."
+            "::MSG."
