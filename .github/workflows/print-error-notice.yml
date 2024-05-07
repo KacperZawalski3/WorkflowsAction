@@ -14,5 +14,5 @@ jobs:
           print \
             "::error" \
             " title=Incorrect Metadata Component Assignment" \
-            ",file=" $0 \
+            ",file=.github/workflows/print-error-notice.yml" \
             "::Standard Value Set, Duplicate rule or Matching rule incorrectly located in a package dir."
