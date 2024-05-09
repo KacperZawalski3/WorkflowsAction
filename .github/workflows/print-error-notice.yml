@@ -15,4 +15,4 @@ jobs:
             "::error" \
             "title=Sample title" \
             ",file=$fileYml" \
-            "::MS/G."
+            "::MS/G. ('$fileYml')"
