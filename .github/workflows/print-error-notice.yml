@@ -11,7 +11,8 @@ jobs:
         shell: bash
         run: |
           fileYml=print-error-notice.yml
-          echo "::error \
-          title=Sample title \
-          ,file=$fileYml \
-          ::MS/G."
+          echo \
+            "::error" \
+            "title=Sample title" \
+            ",file=$fileYml" \
+            "::MS/G."
